@@ -1,18 +1,18 @@
 import React, {useState} from "react"
 export const Tooltip = ({text, children}) => {
-    const [showToolTip, setShowToolTip] = useState(false)
+    const [showTooltip, setShowTooltip] = useState(false)
   
     const show = () => {
-      setShowToolTip(true);
+      setShowTooltip(true);
     }
   
     const hide = () => {
-      setShowToolTip(false);
+      setShowTooltip(false);
     }
   
     return <>
       {
-        showToolTip && <div className= "tooltip">
+        showTooltip && <div className= "tooltip">
           <b className="toottiptext">{text}</b>
         </div>
       }
